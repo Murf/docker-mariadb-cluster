@@ -2,6 +2,8 @@
 
 set -e
 
+sleep $[ ( $RANDOM % 20 )  + 1 ]s
+
 # we set gcomm string with cluster_members via ENV by default
 CLUSTER_ADDRESS="gcomm://$CLUSTER_MEMBERS?pc.wait_prim=no"
 
